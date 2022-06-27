@@ -21,6 +21,8 @@ set(PROJECT_SOURCES
         mainwindow.cpp
         mainwindow.h
         mainwindow.ui
+        paciente.h
+        paciente.cpp
         ${TS_FILES}
 )
 
