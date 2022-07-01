@@ -23,6 +23,10 @@ set(PROJECT_SOURCES
         mainwindow.ui
         paciente.h
         paciente.cpp
+        ferramentas.h
+        ferramentas.cpp
+        ferramentasp.h
+        ferramentasp.cpp
         ${TS_FILES}
 )
 
