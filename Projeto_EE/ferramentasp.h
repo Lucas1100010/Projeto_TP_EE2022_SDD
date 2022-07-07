@@ -1,10 +1,10 @@
 #ifndef FERRAMENTASP_H
 #define FERRAMENTASP_H
 
-#include "ferramentas.h"
+#include <map>
 #include "paciente.h"
 
-class FerramentasP : public Ferramentas
+class FerramentasP
 {
 
 private:
@@ -12,7 +12,7 @@ private:
 public:
     FerramentasP();
     std::map<int,Paciente> listaPacientes;
-    std::set<QString> sintomasP;
+    std::set<QString> sintomasP;//é utilizada temporariamente
     void carregarListaCSVPacientes();
     void carregarListaSintomasPaciente(int id);
 };

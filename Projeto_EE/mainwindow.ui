@@ -43,229 +43,186 @@
      <layout class="QGridLayout" name="gridLayout">
       <item row="0" column="0">
        <widget class="QTabWidget" name="tabGeral">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
         <property name="currentIndex">
          <number>3</number>
         </property>
         <widget class="QWidget" name="tabLogin">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
          <attribute name="title">
           <string>Login</string>
          </attribute>
          <layout class="QGridLayout" name="gridLayout_10">
           <item row="0" column="0">
-           <layout class="QVBoxLayout" name="verticalLayout">
-            <item>
-             <spacer name="verticalSpacer_2">
-              <property name="orientation">
-               <enum>Qt::Vertical</enum>
+           <layout class="QGridLayout" name="gridLayout_2">
+            <item row="0" column="1">
+             <widget class="QLabel" name="label">
+              <property name="text">
+               <string/>
               </property>
-              <property name="sizeType">
-               <enum>QSizePolicy::Fixed</enum>
+              <property name="pixmap">
+               <pixmap>../build-Projeto_EE-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/Imagens/login.jpg</pixmap>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="0">
+             <spacer name="horizontalSpacer">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
               </property>
               <property name="sizeHint" stdset="0">
                <size>
-                <width>20</width>
-                <height>50</height>
+                <width>40</width>
+                <height>20</height>
                </size>
               </property>
              </spacer>
             </item>
-            <item>
-             <layout class="QGridLayout" name="gridLayout_2">
-              <item row="0" column="1">
-               <widget class="QFrame" name="frame">
-                <property name="styleSheet">
-                 <string notr="true">background-image: url(&quot;/Imagens/img.png&quot;);</string>
-                </property>
-                <property name="frameShape">
-                 <enum>QFrame::StyledPanel</enum>
-                </property>
-                <property name="frameShadow">
-                 <enum>QFrame::Raised</enum>
-                </property>
-               </widget>
-              </item>
-              <item row="0" column="0">
-               <spacer name="horizontalSpacer_2">
-                <property name="orientation">
-                 <enum>Qt::Horizontal</enum>
-                </property>
-                <property name="sizeType">
-                 <enum>QSizePolicy::Fixed</enum>
-                </property>
-                <property name="sizeHint" stdset="0">
-                 <size>
-                  <width>350</width>
-                  <height>20</height>
-                 </size>
-                </property>
-               </spacer>
-              </item>
-              <item row="0" column="2">
-               <spacer name="horizontalSpacer_6">
-                <property name="orientation">
-                 <enum>Qt::Horizontal</enum>
-                </property>
-                <property name="sizeType">
-                 <enum>QSizePolicy::Fixed</enum>
-                </property>
-                <property name="sizeHint" stdset="0">
-                 <size>
-                  <width>350</width>
-                  <height>20</height>
-                 </size>
-                </property>
-               </spacer>
-              </item>
-             </layout>
-            </item>
-            <item>
-             <spacer name="verticalSpacer">
+            <item row="0" column="2">
+             <spacer name="horizontalSpacer_2">
               <property name="orientation">
-               <enum>Qt::Vertical</enum>
-              </property>
-              <property name="sizeType">
-               <enum>QSizePolicy::Fixed</enum>
+               <enum>Qt::Horizontal</enum>
               </property>
               <property name="sizeHint" stdset="0">
                <size>
-                <width>20</width>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+          <item row="1" column="0">
+           <layout class="QHBoxLayout" name="horizontalLayout_2">
+            <item>
+             <spacer name="horizontalSpacer_3">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
                 <height>20</height>
                </size>
               </property>
              </spacer>
             </item>
             <item>
-             <layout class="QHBoxLayout" name="horizontalLayout_2">
-              <item>
-               <spacer name="horizontalSpacer">
-                <property name="orientation">
-                 <enum>Qt::Horizontal</enum>
-                </property>
-                <property name="sizeHint" stdset="0">
-                 <size>
-                  <width>40</width>
-                  <height>20</height>
-                 </size>
-                </property>
-               </spacer>
-              </item>
-              <item>
-               <widget class="QLabel" name="label">
-                <property name="text">
-                 <string>Usuario</string>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="QLineEdit" name="lineEdit"/>
-              </item>
-              <item>
-               <spacer name="horizontalSpacer_3">
-                <property name="orientation">
-                 <enum>Qt::Horizontal</enum>
-                </property>
-                <property name="sizeHint" stdset="0">
-                 <size>
-                  <width>40</width>
-                  <height>20</height>
-                 </size>
-                </property>
-               </spacer>
-              </item>
-             </layout>
+             <widget class="QLabel" name="label_2">
+              <property name="text">
+               <string>Usuario:</string>
+              </property>
+             </widget>
             </item>
             <item>
-             <layout class="QHBoxLayout" name="horizontalLayout_4">
-              <item>
-               <spacer name="horizontalSpacer_4">
-                <property name="orientation">
-                 <enum>Qt::Horizontal</enum>
-                </property>
-                <property name="sizeHint" stdset="0">
-                 <size>
-                  <width>40</width>
-                  <height>20</height>
-                 </size>
-                </property>
-               </spacer>
-              </item>
-              <item>
-               <widget class="QLabel" name="label_2">
-                <property name="text">
-                 <string>Senha</string>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="QLineEdit" name="lineEdit_2"/>
-              </item>
-              <item>
-               <spacer name="horizontalSpacer_5">
-                <property name="orientation">
-                 <enum>Qt::Horizontal</enum>
-                </property>
-                <property name="sizeHint" stdset="0">
-                 <size>
-                  <width>40</width>
-                  <height>20</height>
-                 </size>
-                </property>
-               </spacer>
-              </item>
-             </layout>
+             <widget class="QLineEdit" name="lineEdit_login"/>
             </item>
             <item>
-             <layout class="QGridLayout" name="gridLayout_3">
-              <item row="0" column="0">
-               <spacer name="horizontalSpacer_8">
-                <property name="orientation">
-                 <enum>Qt::Horizontal</enum>
-                </property>
-                <property name="sizeHint" stdset="0">
-                 <size>
-                  <width>40</width>
-                  <height>20</height>
-                 </size>
-                </property>
-               </spacer>
-              </item>
-              <item row="0" column="2">
-               <spacer name="horizontalSpacer_7">
-                <property name="orientation">
-                 <enum>Qt::Horizontal</enum>
-                </property>
-                <property name="sizeType">
-                 <enum>QSizePolicy::Preferred</enum>
-                </property>
-                <property name="sizeHint" stdset="0">
-                 <size>
-                  <width>295</width>
-                  <height>20</height>
-                 </size>
-                </property>
-               </spacer>
-              </item>
-              <item row="0" column="1">
-               <widget class="QPushButton" name="pushButton">
-                <property name="text">
-                 <string>Entrar</string>
-                </property>
-               </widget>
-              </item>
-              <item row="0" column="3">
-               <widget class="QPushButton" name="pushButton_2">
-                <property name="text">
-                 <string>Criar  conta</string>
-                </property>
-               </widget>
-              </item>
-             </layout>
+             <spacer name="horizontalSpacer_5">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+          <item row="2" column="0">
+           <layout class="QHBoxLayout" name="horizontalLayout_4">
+            <item>
+             <spacer name="horizontalSpacer_4">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_22">
+              <property name="text">
+               <string>   Senha:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="lineEdit_senha"/>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_6">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+          <item row="3" column="0">
+           <layout class="QGridLayout" name="gridLayout_3">
+            <item row="0" column="0">
+             <spacer name="horizontalSpacer_7">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="0" column="1">
+             <widget class="QPushButton" name="pushButton_entrar">
+              <property name="text">
+               <string>Entrar</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="2">
+             <spacer name="horizontalSpacer_8">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
             </item>
            </layout>
           </item>
          </layout>
         </widget>
         <widget class="QWidget" name="tabPaciente">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
          <attribute name="title">
           <string>Paciente</string>
          </attribute>
@@ -279,51 +236,127 @@
            </rect>
           </property>
           <layout class="QGridLayout" name="gridLayout_8">
-           <item row="2" column="1">
-            <widget class="QDateEdit" name="dateEdit_ultimaConsultaTabPaciente">
-             <property name="minimumDate">
-              <date>
-               <year>1920</year>
-               <month>1</month>
-               <day>1</day>
-              </date>
-             </property>
-             <property name="calendarPopup">
-              <bool>true</bool>
-             </property>
-             <property name="date">
-              <date>
-               <year>2022</year>
-               <month>12</month>
-               <day>31</day>
-              </date>
+           <item row="0" column="1">
+            <widget class="QComboBox" name="comboBox_listaPacientes"/>
+           </item>
+           <item row="4" column="0">
+            <widget class="QLabel" name="label_3">
+             <property name="text">
+              <string>Sexo</string>
              </property>
             </widget>
            </item>
-           <item row="1" column="0">
+           <item row="2" column="0">
             <widget class="QLabel" name="label_17">
              <property name="text">
               <string>Idade</string>
              </property>
             </widget>
            </item>
-           <item row="2" column="0">
-            <widget class="QLabel" name="label_18">
-             <property name="text">
-              <string>Ultima consulta</string>
+           <item row="4" column="1">
+            <widget class="QLineEdit" name="lineEdit_sexoPaciente">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="readOnly">
+              <bool>true</bool>
              </property>
             </widget>
            </item>
-           <item row="1" column="1">
-            <widget class="QLineEdit" name="lineEdit_idadePaciente"/>
+           <item row="6" column="1">
+            <widget class="QLineEdit" name="lineEdit_peso">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="readOnly">
+              <bool>true</bool>
+             </property>
+            </widget>
            </item>
-           <item row="0" column="1">
-            <widget class="QComboBox" name="comboBox_listaPacientes"/>
+           <item row="2" column="1">
+            <widget class="QLineEdit" name="lineEdit_idadePaciente">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="readOnly">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="0" colspan="2">
+            <widget class="Line" name="line_2">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+            </widget>
+           </item>
+           <item row="6" column="0">
+            <widget class="QLabel" name="label_18">
+             <property name="text">
+              <string>Peso</string>
+             </property>
+            </widget>
+           </item>
+           <item row="7" column="0" colspan="2">
+            <widget class="Line" name="line_4">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+            </widget>
            </item>
            <item row="0" column="0">
             <widget class="QLabel" name="label_16">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
              <property name="text">
               <string>Paciente</string>
+             </property>
+            </widget>
+           </item>
+           <item row="8" column="0">
+            <widget class="QLabel" name="label_21">
+             <property name="text">
+              <string>Tipo Sanguineo</string>
+             </property>
+            </widget>
+           </item>
+           <item row="8" column="1">
+            <widget class="QLineEdit" name="lineEdit_tipoS">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="readOnly">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="0" colspan="2">
+            <widget class="Line" name="line_3">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0" colspan="2">
+            <widget class="Line" name="line">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
              </property>
             </widget>
            </item>
@@ -339,6 +372,35 @@
            </rect>
           </property>
           <layout class="QGridLayout" name="gridLayout_9">
+           <item row="2" column="0">
+            <widget class="QTableWidget" name="tableWidget_pacienteXdoenca">
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="gridStyle">
+              <enum>Qt::SolidLine</enum>
+             </property>
+             <property name="rowCount">
+              <number>0</number>
+             </property>
+             <attribute name="horizontalHeaderCascadingSectionResizes">
+              <bool>false</bool>
+             </attribute>
+             <attribute name="horizontalHeaderDefaultSectionSize">
+              <number>210</number>
+             </attribute>
+             <column>
+              <property name="text">
+               <string>Doença</string>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>Chance</string>
+              </property>
+             </column>
+            </widget>
+           </item>
            <item row="0" column="0">
             <widget class="QLabel" name="label_19">
              <property name="text">
@@ -347,136 +409,19 @@
             </widget>
            </item>
            <item row="1" column="0">
-            <widget class="QTableWidget" name="tableWidget">
-             <property name="frameShape">
-              <enum>QFrame::StyledPanel</enum>
+            <widget class="QPushButton" name="pushButton_carregar_tab_paciente">
+             <property name="text">
+              <string>Carregar</string>
              </property>
-             <property name="gridStyle">
-              <enum>Qt::SolidLine</enum>
-             </property>
-             <property name="rowCount">
-              <number>100</number>
-             </property>
-             <row>
-              <property name="text">
-               <string>1</string>
-              </property>
-             </row>
-             <row/>
-             <row/>
-             <row/>
-             <row/>
-             <row/>
-             <row/>
-             <row/>
-             <row/>
-             <row/>
-             <row/>
-             <row/>
-             <row/>
-             <row/>
-             <row/>
-             <row/>
-             <row/>
-             <row/>
-             <row/>
-             <row/>
-             <row/>
-             <row/>
-             <row/>
-             <row/>
-             <row/>
-             <row/>
-             <row/>
-             <row/>
-             <row/>
-             <row/>
-             <row/>
-             <row/>
-             <row/>
-             <row/>
-             <row/>
-             <row/>
-             <row/>
-             <row/>
-             <row/>
-             <row/>
-             <row/>
-             <row/>
-             <row/>
-             <row/>
-             <row/>
-             <row/>
-             <row/>
-             <row/>
-             <row/>
-             <row/>
-             <row/>
-             <row/>
-             <row/>
-             <row/>
-             <row/>
-             <row/>
-             <row/>
-             <row/>
-             <row/>
-             <row/>
-             <row/>
-             <row/>
-             <row/>
-             <row/>
-             <row/>
-             <row/>
-             <row/>
-             <row/>
-             <row/>
-             <row/>
-             <row/>
-             <row/>
-             <row/>
-             <row/>
-             <row/>
-             <row/>
-             <row/>
-             <row/>
-             <row/>
-             <row/>
-             <row/>
-             <row/>
-             <row/>
-             <row/>
-             <row/>
-             <row/>
-             <row/>
-             <row/>
-             <row/>
-             <row/>
-             <row/>
-             <row/>
-             <row/>
-             <row/>
-             <row/>
-             <row/>
-             <row/>
-             <row/>
-             <row/>
-             <row/>
-             <column>
-              <property name="text">
-               <string>Doença</string>
-              </property>
-             </column>
-             <column>
-              <property name="text">
-               <string>Probabilidade</string>
-              </property>
-             </column>
             </widget>
            </item>
           </layout>
          </widget>
         </widget>
         <widget class="QWidget" name="tabResultados">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
          <attribute name="title">
           <string>Resumo Geral</string>
          </attribute>
@@ -491,7 +436,13 @@
           </property>
           <layout class="QGridLayout" name="gridLayout_13">
            <item row="0" column="0">
-            <widget class="QTableWidget" name="tableWidget_2">
+            <widget class="QTableWidget" name="tableWidget_ResumoGeral">
+             <property name="sortingEnabled">
+              <bool>true</bool>
+             </property>
+             <attribute name="horizontalHeaderDefaultSectionSize">
+              <number>169</number>
+             </attribute>
              <row>
               <property name="text">
                <string>1</string>
@@ -504,12 +455,24 @@
              </column>
              <column>
               <property name="text">
-               <string>Doença</string>
+               <string>Idade</string>
               </property>
              </column>
              <column>
               <property name="text">
-               <string>Probabilidade</string>
+               <string>Sexo</string>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>Peso</string>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>Doença com 
+sintomas 
+predominantes</string>
               </property>
              </column>
             </widget>
@@ -518,6 +481,9 @@
          </widget>
         </widget>
         <widget class="QWidget" name="tabCadastroPaciente">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
          <attribute name="title">
           <string>Cadastro de Paciente</string>
          </attribute>
@@ -666,18 +632,12 @@
                </widget>
               </item>
               <item row="1" column="1">
-               <widget class="QComboBox" name="comboBox_idadePaciente">
-                <item>
-                 <property name="text">
-                  <string>1</string>
-                 </property>
-                </item>
-               </widget>
+               <widget class="QComboBox" name="comboBox_idadePaciente"/>
               </item>
               <item row="7" column="0">
                <widget class="QPushButton" name="pushButton_cadastrarPaciente">
                 <property name="enabled">
-                 <bool>true</bool>
+                 <bool>false</bool>
                 </property>
                 <property name="text">
                  <string>Cadastrar</string>
@@ -706,13 +666,7 @@
                </widget>
               </item>
               <item row="2" column="0">
-               <widget class="QListWidget" name="listWidget_sintomasPossiveis">
-                <item>
-                 <property name="text">
-                  <string>teste</string>
-                 </property>
-                </item>
-               </widget>
+               <widget class="QListWidget" name="listWidget_sintomasPossiveis"/>
               </item>
               <item row="2" column="1">
                <widget class="QListWidget" name="listWidget_sintomasPaciente">
@@ -728,37 +682,47 @@
          </layout>
         </widget>
         <widget class="QWidget" name="tabCadastroDoenca">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
          <attribute name="title">
           <string>Cadastro de Doenças</string>
          </attribute>
          <layout class="QGridLayout" name="gridLayout_11">
           <item row="0" column="0">
+           <spacer name="horizontalSpacer_11">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeType">
+             <enum>QSizePolicy::Fixed</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="0" column="1">
            <layout class="QGridLayout" name="gridLayout_4">
-            <item row="3" column="3">
-             <widget class="QListView" name="listView"/>
-            </item>
-            <item row="3" column="1">
-             <widget class="QLineEdit" name="lineEdit_6"/>
+            <item row="5" column="0" colspan="4">
+             <widget class="QPushButton" name="pushButton_salvarDadosDoenca">
+              <property name="text">
+               <string>Salvar</string>
+              </property>
+             </widget>
             </item>
             <item row="3" column="2">
-             <widget class="QPushButton" name="pushButton_4">
+             <widget class="QPushButton" name="pushButton_adicionarSintomaAList">
               <property name="text">
-               <string>Adicionar -&gt;</string>
+               <string>Adicionar</string>
               </property>
              </widget>
             </item>
-            <item row="1" column="1">
-             <widget class="QLineEdit" name="lineEdit_5"/>
-            </item>
-            <item row="1" column="0">
-             <widget class="QLabel" name="label_11">
-              <property name="text">
-               <string>Nome:</string>
-              </property>
-             </widget>
-            </item>
-            <item row="2" column="1">
-             <widget class="QComboBox" name="comboBox_2"/>
+            <item row="3" column="1">
+             <widget class="QLineEdit" name="lineEdit_sintomaInsert_C"/>
             </item>
             <item row="2" column="0">
              <widget class="QLabel" name="label_12">
@@ -767,18 +731,66 @@
               </property>
              </widget>
             </item>
+            <item row="3" column="4">
+             <spacer name="horizontalSpacer_12">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeType">
+               <enum>QSizePolicy::Fixed</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
             <item row="3" column="0">
              <widget class="QLabel" name="label_13">
               <property name="text">
-               <string>Sintomas:</string>
+               <string>Sintoma:</string>
               </property>
              </widget>
             </item>
-            <item row="4" column="0" colspan="4">
-             <widget class="QPushButton" name="pushButton_5">
-              <property name="text">
-               <string>Salvar</string>
-              </property>
+            <item row="2" column="1">
+             <widget class="QComboBox" name="comboBox_causadorDoenca_C">
+              <item>
+               <property name="text">
+                <string>Vírus</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Protozoario</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Bactéria</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Ameba</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Mosquito</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Fungo</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string/>
+               </property>
+              </item>
              </widget>
             </item>
             <item row="0" column="0">
@@ -797,11 +809,27 @@
               </property>
              </spacer>
             </item>
+            <item row="1" column="1">
+             <widget class="QLineEdit" name="lineEdit_nomeDoenca_C"/>
+            </item>
+            <item row="1" column="0">
+             <widget class="QLabel" name="label_11">
+              <property name="text">
+               <string>Nome da doença:</string>
+              </property>
+             </widget>
+            </item>
+            <item row="4" column="1">
+             <widget class="QListWidget" name="listWidget_sintomaCadastro"/>
+            </item>
            </layout>
           </item>
          </layout>
         </widget>
         <widget class="QWidget" name="tabCarregarSalvar">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
          <attribute name="title">
           <string>Carregar/Salvar dados</string>
          </attribute>
@@ -819,21 +847,21 @@
             <number>7</number>
            </property>
            <item row="1" column="3">
-            <widget class="QPushButton" name="pushButton_9">
+            <widget class="QPushButton" name="pushButton_CarregarDoencasCSV">
              <property name="text">
               <string>Carregar CSV</string>
              </property>
             </widget>
            </item>
            <item row="0" column="2">
-            <widget class="QPushButton" name="pushButton_6">
+            <widget class="QPushButton" name="pushButton_SalvarPacientesCSV">
              <property name="text">
               <string>Salvar em CSV</string>
              </property>
             </widget>
            </item>
            <item row="1" column="2">
-            <widget class="QPushButton" name="pushButton_8">
+            <widget class="QPushButton" name="pushButton_SalvarDoencasCSV">
              <property name="text">
               <string>Salvar em CSV</string>
              </property>
@@ -880,10 +908,13 @@
              <property name="text">
               <string>Carregar pacientes ao iniciar?</string>
              </property>
+             <property name="checked">
+              <bool>false</bool>
+             </property>
             </widget>
            </item>
            <item row="0" column="3">
-            <widget class="QPushButton" name="pushButton_7">
+            <widget class="QPushButton" name="pushButton_CarregarPacientesCSV">
              <property name="text">
               <string>Carregar CSV</string>
              </property>
@@ -906,50 +937,14 @@
             </spacer>
            </item>
            <item row="2" column="3">
-            <widget class="QCheckBox" name="checkBox_2">
+            <widget class="QCheckBox" name="checkBox_carregarDoencasIniciar">
              <property name="text">
               <string>Carregar lista de doenças ao inciar?</string>
              </property>
+             <property name="checked">
+              <bool>false</bool>
+             </property>
             </widget>
-           </item>
-          </layout>
-         </widget>
-        </widget>
-        <widget class="QWidget" name="tabAjuda">
-         <attribute name="title">
-          <string>Ajuda</string>
-         </attribute>
-         <widget class="QWidget" name="gridLayoutWidget_7">
-          <property name="geometry">
-           <rect>
-            <x>10</x>
-            <y>10</y>
-            <width>851</width>
-            <height>491</height>
-           </rect>
-          </property>
-          <layout class="QGridLayout" name="gridLayout_14">
-           <item row="0" column="0">
-            <widget class="QListWidget" name="listWidget_3">
-             <item>
-              <property name="text">
-               <string>Login</string>
-              </property>
-             </item>
-             <item>
-              <property name="text">
-               <string>Funcionamento básico</string>
-              </property>
-             </item>
-             <item>
-              <property name="text">
-               <string>Como carregar dados</string>
-              </property>
-             </item>
-            </widget>
-           </item>
-           <item row="0" column="1">
-            <widget class="QTextEdit" name="textEdit_Ajuda"/>
            </item>
           </layout>
          </widget>

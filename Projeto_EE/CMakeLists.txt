@@ -27,6 +27,10 @@ set(PROJECT_SOURCES
         ferramentas.cpp
         ferramentasp.h
         ferramentasp.cpp
+        doenca.h
+        doenca.cpp
+        ferramentasd.h
+        ferramentasd.cpp
         ${TS_FILES}
 )
 

@@ -20,23 +20,47 @@ void FerramentasP::carregarListaCSVPacientes(){
     QString sexo;
     float peso;
     QString tipoS;
-    std::set<QString> sintomas;//guardando copias?
+    //std::set<QString> sintomas;//guardando copias?
 
-    std::ifstream dadosPacientesCsv(QDir::currentPath().toStdString()+"dados/Pacientes/Pacientes.csv");
+    std::ifstream dadosPacientesCsv("dados\\Pacientes\\Pacientes.csv");
     if(dadosPacientesCsv.is_open()){
-        while(dadosPacientesCsv >> idPaciente){
+
+//        std::cout << "OK \n";
+        while(std::getline(dadosPacientesCsv,temp,',')){
+            idPaciente = std::stoi(temp);
+//            std::cout << temp << ", ";
+//            std::getchar();
+
             std::getline(dadosPacientesCsv,temp,',');
             nomePaciente = QString::fromStdString(temp);
-            dadosPacientesCsv >> idade;
+//            std::cout << temp << ", ";
+//            std::getchar();
+
+            std::getline(dadosPacientesCsv,temp,',');
+            idade = std::stoi(temp);
+//            std::cout << temp << ", ";
+//            std::getchar();
+
             std::getline(dadosPacientesCsv,temp,',');
             sexo = QString::fromStdString(temp);
-            dadosPacientesCsv >> peso;
-            dadosPacientesCsv >> temp;
-            tipoS = QString::fromStdString(temp);
+//            std::cout << temp << ", ";
+//            std::getchar();
 
+            std::getline(dadosPacientesCsv,temp,',');
+            peso = std::stof(temp);
+//            std::cout << temp << ", ";
+//            std::getchar();
+
+            std::getline(dadosPacientesCsv,temp);
+            tipoS = QString::fromStdString(temp);
+//            std::cout << temp << std::endl;
+
+
+//            std::cout << " carregando lista de sintomas \n";
             //carregar lista de sintomas para o paciente
             this->carregarListaSintomasPaciente(idPaciente);
 
+//            std::cout << " gerando objeto paciente \n";
             //criar objeto paciente
             Paciente p(idPaciente,nomePaciente,idade,sexo,peso,tipoS,this->sintomasP);
             //adicionar seu endereço ao map
@@ -45,14 +69,20 @@ void FerramentasP::carregarListaCSVPacientes(){
 
 
         }
+        dadosPacientesCsv.close();
     }
+
+
 }
 void FerramentasP::carregarListaSintomasPaciente(int id){
+//    std::cout << " sintomas \n";
     std::string sintoma;
-    std::ifstream dadosPacientesSintomasCsv(QDir::currentPath().toStdString()+"dados/Pacientes/Sintomas/"+std::to_string(id));
+    std::ifstream dadosPacientesSintomasCsv("dados\\Pacientes\\Sintomas\\"+std::to_string(id)+".csv");
     if(dadosPacientesSintomasCsv.is_open() ){
         while (std::getline(dadosPacientesSintomasCsv,sintoma) ) {
             this->sintomasP.insert(QString::fromStdString(sintoma));
         }
+        dadosPacientesSintomasCsv.close();
     }
+
 }
