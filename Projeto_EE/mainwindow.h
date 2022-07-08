@@ -50,9 +50,10 @@ private slots:
 
     void on_pushButton_carregar_tab_paciente_clicked();
 
-    void on_pushButton_entrar_clicked();
-
     void on_checkBox_carregarPacientesIniciar_stateChanged(int arg1);
+
+
+    void on_pushButton_atualizarResumoGeral_clicked();
 
 private:
     Ui::MainWindow *ui;

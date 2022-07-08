@@ -31,6 +31,7 @@ set(PROJECT_SOURCES
         doenca.cpp
         ferramentasd.h
         ferramentasd.cpp
+        recursos.qrc
         ${TS_FILES}
 )
 

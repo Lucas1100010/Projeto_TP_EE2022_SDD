@@ -181,28 +181,7 @@ void MainWindow::on_tabGeral_tabBarClicked(int index)
 
         }
     }
-    else if( index == 2){
 
-        int i = 0;
-        ui->tableWidget_ResumoGeral->clearContents();
-        for( const auto &[id, p] : this->ferramentas->ferramentas_p->listaPacientes   ){
-
-            this->ferramentas->correlacionar(id);
-
-            if( i >= ui->tableWidget_ResumoGeral->rowCount() ){
-                ui->tableWidget_ResumoGeral->insertRow(i);
-            }
-            // nome idade sexo peso doenca
-            ui->tableWidget_ResumoGeral->setItem(i,0, new QTableWidgetItem(p.getNome() ) );
-            ui->tableWidget_ResumoGeral->setItem(i,1, new QTableWidgetItem( QString::number( p.getIdade() ) ) );
-            ui->tableWidget_ResumoGeral->setItem(i,2, new QTableWidgetItem(p.getSexo()) );
-            ui->tableWidget_ResumoGeral->setItem(i,3, new QTableWidgetItem( QString::number( p.getPeso() )) );
-            ui->tableWidget_ResumoGeral->setItem(i,4, new QTableWidgetItem(this->ferramentas->listaParaResumoGeral[p.getNome()] ));
-            i++;
-        }
-
-
-    }
 }
 
 Ferramentas *MainWindow::getFerramentas() const
@@ -340,43 +319,6 @@ void MainWindow::on_pushButton_carregar_tab_paciente_clicked()
 }
 
 
-void MainWindow::on_pushButton_entrar_clicked()
-{
-    QString usuario = ui->lineEdit_login->text();
-    QString senha =ui->lineEdit_senha->text();
-    std::string tempU;
-    std::string tempS;
-    std::ifstream dadosLogin("dados/login/login.csv");
-
-    bool ok = 0;
-
-    if(dadosLogin.is_open()){
-        while(std::getline(dadosLogin,tempU,',')){
-            std::getline(dadosLogin,tempS);
-            if(usuario == QString::fromStdString(tempU) and senha == QString::fromStdString(tempS)){
-                ok = 1;
-            }
-        }
-
-        if(ok){
-            ui->tabPaciente->setEnabled(1);
-            ui->tabCadastroPaciente->setEnabled(1);
-            ui->tabCadastroDoenca->setEnabled(1);
-            ui->tabCarregarSalvar->setEnabled(1);
-            ui->tabResultados->setEnabled(1);
-        }else{
-            QMessageBox::warning(this,"Login","Usuário ou senha inválido");
-        }
-
-    }else{
-        QMessageBox::warning(this, "Login","Arquivo de login inexistente.");
-
-    }
-
-
-}
-
-
 void MainWindow::on_checkBox_carregarPacientesIniciar_stateChanged(int arg1)
 {
     std::ofstream inicializarConfig("config_inicializar.txt");
@@ -397,5 +339,27 @@ void MainWindow::on_checkBox_carregarPacientesIniciar_stateChanged(int arg1)
     }
 //    std::cout << arg1 << std::endl;
 
+}
+
+
+void MainWindow::on_pushButton_atualizarResumoGeral_clicked()
+{
+    int i = 0;
+    ui->tableWidget_ResumoGeral->clearContents();
+    for( const auto &[id, p] : this->ferramentas->ferramentas_p->listaPacientes   ){
+
+        this->ferramentas->correlacionar(id);
+
+        if( i >= ui->tableWidget_ResumoGeral->rowCount() ){
+            ui->tableWidget_ResumoGeral->insertRow(i);
+        }
+        // nome idade sexo peso doenca
+        ui->tableWidget_ResumoGeral->setItem(i,0, new QTableWidgetItem(p.getNome() ) );
+        ui->tableWidget_ResumoGeral->setItem(i,1, new QTableWidgetItem( QString::number( p.getIdade() ) ) );
+        ui->tableWidget_ResumoGeral->setItem(i,2, new QTableWidgetItem(p.getSexo()) );
+        ui->tableWidget_ResumoGeral->setItem(i,3, new QTableWidgetItem( QString::number( p.getPeso() )) );
+        ui->tableWidget_ResumoGeral->setItem(i,4, new QTableWidgetItem(this->ferramentas->listaParaResumoGeral[p.getNome()] ));
+        i++;
+    }
 }
 
