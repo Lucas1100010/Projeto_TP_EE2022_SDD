@@ -48,6 +48,7 @@ void Ferramentas::correlacionar(int id){
         this->pacienteXdoencas[paciente.getNome()][doenca.getNomeDoenca()]=percentual;
         if(percentual > ptemp){
             this->listaParaResumoGeral[paciente.getNome()] = doenca.getNomeDoenca();
+            ptemp = percentual;
         }
 
 //        for( std::pair<QString, std::map<QString, float> > pp : this->pacienteXdoencas ){
@@ -61,6 +62,7 @@ void Ferramentas::correlacionar(int id){
 //        }
 
     }
+    ptemp = 0;
 
 }
 
@@ -97,6 +99,7 @@ bool Ferramentas::salvarCSV(bool m){
                 listaTemporaria.insert(QString::fromStdString(temp) );
                 linhas ++;
                 std::getline(dadosCarregados,temp);
+                std::cout<< "Salvar dados: lendo lista de pacientes, linha atual: "<< linhas << " string " << temp;
 
             }
             dadosCarregados.close();
@@ -126,7 +129,7 @@ bool Ferramentas::salvarCSV(bool m){
 
                         //idPaciente = paciente.second.getIdPaciente();//substituir por linhas
                         idPaciente = linhas + 1;
-                        std::cout << idPaciente << std::endl;
+                        std::cout <<  std::endl << "idPaciente: " << idPaciente << std::endl;
 
                         dadosCSVSalvar << idPaciente << "," << nome.toStdString() << "," << idade << ",";
                         dadosCSVSalvar << sexo.toStdString() << "," << peso << "," << tipoSanguineo.toStdString() << "\n";
