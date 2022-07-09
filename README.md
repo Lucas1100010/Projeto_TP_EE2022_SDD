@@ -479,13 +479,3 @@ Relacionar um paciente com uma doença com base em sintomas em comum.
             ptemp = 0;
 
         }
-=======
-### Cadastro de Paciente
-![Aba responsável pelo cadastro de paciente](img_README/cadastro%20de%20paciente.png)
-
-### Cadastro de doenças
-![Aba responsável pelo cadastro de doenças](img_README/cadastro%20de%20doenca.png)
-
-### Carregar/Salvar dados
-![Aba responsável por salvar de carregar dados](img_README/carregar%20salvar.png)
->>>>>>> e0bdb52f286f8ece9ada2eb32187085c0642b4c6
